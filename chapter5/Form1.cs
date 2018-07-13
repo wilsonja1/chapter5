@@ -28,6 +28,24 @@ namespace chapter5
             decimal Cost = dinnerParty.CalculateCost(checkBox2.Checked);
             costLabel.Text = Cost.ToString("c");
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            dinnerParty.NumberOfPeople = (int) numericUpDown1.Value;
+            DisplayDinnerPartyCost();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.CalculateCostOfDecorations(checkBox1.Checked);
+            DisplayDinnerPartyCost();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            dinnerParty.SetHealthyOption(checkBox2.Checked);
+            DisplayDinnerPartyCost();
+        }
     }
 
 }
