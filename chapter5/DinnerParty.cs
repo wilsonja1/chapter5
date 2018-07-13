@@ -8,9 +8,9 @@ namespace chapter5
 {
     class DinnerParty
     {
-        int NumberOfPeople;
-        decimal CostOfBeveragesPerPerson;
-        decimal CostOfDecorations;
+        public int NumberOfPeople;
+        public decimal CostOfBeveragesPerPerson;
+        public decimal CostOfDecorations;
         public const int CostOfFoodPerPerson = 25;
 
         public void SetHealthyOption(bool healthyOption)

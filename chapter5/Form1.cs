@@ -22,5 +22,12 @@ namespace chapter5
             dinnerParty.CalculateCostOfDecorations(true);
             DisplayDinnerPartyCost();
         }
+
+        public void DisplayDinnerPartyCost()
+        {
+            decimal Cost = dinnerParty.CalculateCost(checkBox2.Checked);
+            costLabel.Text = Cost.ToString("c");
+        }
     }
+
 }
