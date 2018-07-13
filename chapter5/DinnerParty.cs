@@ -24,7 +24,7 @@ namespace chapter5
         private decimal CalculateCostOfDecorations()
         {
             decimal costOfDecorations;
-            if (fancy)
+            if (FancyDecorations)
             {
                 costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
             }
