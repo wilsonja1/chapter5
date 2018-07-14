@@ -16,5 +16,13 @@ namespace chapter5
 
         public string CakeWriting { get; set; }
 
+        public BirthdayParty(int numberOfPeople,
+                                bool fancyDecorations, string cakeWriting)
+        {
+            NumberOfPeople = numberOfPeople;
+            FancyDecorations = fancyDecorations;
+            CakeWriting = cakeWriting;
+        }
+
     }
 }
