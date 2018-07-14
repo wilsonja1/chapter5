@@ -22,7 +22,7 @@ namespace chapter5
             DisplayDinnerPartyCost();
 
             birthdayParty = new BirthdayParty((int) numericUpDown2.Value, checkBox3.Checked, textBox1.Text);
-            DisplayBirthdayPartyCost()
+            DisplayBirthdayPartyCost();
         }
 
         public void DisplayDinnerPartyCost()
