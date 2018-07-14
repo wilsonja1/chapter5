@@ -24,5 +24,31 @@ namespace chapter5
             CakeWriting = cakeWriting;
         }
 
+        private int ActualLength
+        {
+            get
+            {
+                if (CakeWriting.Length > MaxWritingLength())
+                    return MaxWritingLength();
+                else
+                    return CakeWriting.Length;
+            }
+        }
+
+        private int CakeSize()
+        {
+            if (NumberOfPeople <= 4)
+                return 8;
+            else
+                return 16;
+        }
+
+        private int MaxWritingLength()
+        {
+            if (CakeSize() == 8)
+                return 16;
+            else
+                return 40;
+        }
     }
 }
